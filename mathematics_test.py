@@ -4,8 +4,10 @@ import mathematics
 class TestMathMethods(unittest.TestCase):
 
     def test_add(self):
-        self.assertEqual(3, mathematics.add(1, 2))
-        self.assertEqual(10, mathematics.add(3, 7))
+        assert mathematics.add(1, 2) == 3
+        assert mathematics.add(3, 7) == 10
+        # self.assertEqual(3, mathematics.add(1, 2))
+        # self.assertEqual(10, mathematics.add(3, 7))
 
     def test_multiply(self):
         self.assertEqual(50, mathematics.multiply(5, 10))
